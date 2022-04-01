@@ -1,2 +1,2 @@
 # oibsip_task-no.-02
-# Please check  master branch for more details.
+# Please check  master branch for project files.
