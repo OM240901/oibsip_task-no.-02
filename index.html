@@ -1,0 +1,144 @@
+<html>  
+
+<Head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name=" "viewport content="width= device-width", initial-scale="1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tribute Page</title>
+    <body>
+
+        <section class="first">
+            <!-- <div> -->
+            <img style="width: 100%; height: auto;" src = "homestar.png" >
+               
+            <!-- </div> -->
+        </section>
+        <br><br><br><br>
+
+        <section class="second">
+            <!-- <img src="/second back.png" style="width: 100%; height: auto; opacity: 0.2; "> -->
+            <div class="background" >
+           <h1 style="text-align: center;  font-size: 40px;  height: auto"><br>Biography</h1>
+            
+            <p style="font-size: 30px; margin: 10px;text-align: justify; padding: 10px;">
+                An eminent person with boldness in his eyes, dauntlessness in voice, a spark in thoughts & a heart owned to the 
+                mother India, Rohit Sardana was an outstanding Journalist & News Anchor. A  passionate boy born on the divine
+                lands of Kurukshetra, with love for his country & the dream in his eyes to create his own identity among the 
+                people, holding hands with sincerity, dedication, charm, and the attitude of making the most out of all that 
+                comes, Sardana succeeded in becoming the number one TV show Anchor & gracefully hosted Dangal on Aaj Tak & 
+                Taal Thok Ke on Zee News.<br><br>
+
+               Married to Ms. Pramila Dixit & had 2 beautiful little Angels Nandika & Kashi, Rohit led a joyous & peaceful life.
+               Such an eminent person whose talent was recognized by various eminent Personalities including Indian Former
+               Cricketer. Kapil Dev went into the skies during the Covid-19 outburst in April 2021 while sincerely obeying his
+               duties on ground zero, creating a void in the hearts of millions.       
+            </p>  
+            </div> 
+        </section>
+
+        <section  class="third" style="align-items: center; width:auto; height: 100vh;">
+         
+          <div class="slideshow-container" style= { align-items: center; width:auto; height: 100vh;  }>
+
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="award1.jpg" style="width:auto; height:auto; align:center ">
+              <div class="text">Awarded with Best Anchor on Digital News Channel</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="fam.png" style="width:auto; height:auto; align:center ">
+              <div class="text">Family</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="kids.jpg" style="width:auto; height:auto; align:center ">
+              <div class="text">Little Angels</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="award2.jpg" style="width:auto; height:auto; align:center">
+              <div class="text">Best Talk Show- Dangal</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="/rohit.jpg.jpg" style="width:auto; height:auto; align:center ">
+             
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+            
+            <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+            
+        </section>
+
+        <section class="fourth">
+            <!-- <div> -->
+              <p style="font-size: 45px; margin: 10px;text-align: justify; padding: 10px;">
+               <ul id="href_style" style="text-align:center">
+                   <li> <a href="https://en.wikipedia.org/wiki/Rohit_Sardana">Rohit Sardana Wikipedia</a></li>
+                    <li><a href="https://rohitsardanafoundation.com/">Rohit Sardana Foundation</a></li>
+                        <li><a href="https://youtu.be/MH3SRXuF634">Rohit Sardana TedX</a> </li>
+                            <li><a href="https://www.facebook.com/rohitsardanaofficialpage">Rohit Sardana Facebook page</a></li>
+                                <li><a href="https://www.instagram.com/sardana.rohit/?hl=en">Rohit Sardana Facebook page</a></li>
+                                </ul>
+              </p>
+              <br>
+              <br>
+              <br>
+              <br>
+              <br>
+              
+              <br>
+              <br>
+              <br>
+              <br>
+              <p style ="font-size: 35px; margin: 10px; bottom-margin: 10px; text-align: center; padding: 10px;">Made with ♥ by: OMKAR KHAPKE</p>
+            <!-- </div> -->
+        </section>
+        <br><br><br><br>
+    </body>
+</Head>
+</html>        
